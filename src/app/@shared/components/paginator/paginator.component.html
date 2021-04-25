@@ -1,0 +1,21 @@
+<button mat-button
+  (click)="raiseEvent(paginatorEvents.first)"
+>
+  <mat-icon>first_page</mat-icon>
+</button>
+<button mat-button
+(click)="raiseEvent(paginatorEvents.previous)"
+>
+  <mat-icon>navigate_before</mat-icon>
+</button>
+<span class="page-number">página {{pageNumber}}</span>
+<button mat-button
+  (click)="raiseEvent(paginatorEvents.next)"
+>
+  <mat-icon>navigate_next</mat-icon>
+</button>
+<button mat-button
+  (click)="raiseEvent(paginatorEvents.last)"
+>
+  <mat-icon>last_page</mat-icon>
+</button>

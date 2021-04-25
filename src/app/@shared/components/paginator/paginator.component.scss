@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  // TODO: use mixims & vars
+  color: rgba(255, 215, 64, 0.87);
+  background-color: #262626;
+  padding-left: 1rem;
+}
+
+button {
+  margin-right: 1rem;
+}
+
+.page-number {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding-top: 4px;
+  padding-right: 1rem;
+  display: inline-block;
+  white-space: nowrap;
+}

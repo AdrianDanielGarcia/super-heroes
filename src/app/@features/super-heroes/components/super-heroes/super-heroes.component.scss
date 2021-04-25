@@ -1,0 +1,146 @@
+
+@import '~@angular/material/theming';
+
+:host {
+  display: block;
+  height: 100%;
+  position: relative;
+  // background-image: url('/assets/heroes-background.jpg');
+}
+
+mat-toolbar {
+  border-bottom: 1px solid rgba(white, 0.13);
+}
+
+.mat-toolbar-row {
+  justify-content: space-between;
+
+  .search-icon {
+    // TODO: use mixims & vars
+    color: rgba(255, 215, 64, 0.87);
+    transform: translateY(10px);
+  }
+
+  .mat-form-field {
+    color: rgba(255, 215, 64, 0.87);
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+
+  }
+}
+
+.super-heroes-table-container {
+  display: block;
+  height: 295px;
+  overflow: hidden;
+
+  @media (max-width: 450px) {
+    height: fit-content;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+.super-heroes-table {
+  margin: 0 auto;
+  width: 100%;
+  // TODO: move tuhis values to vars, ixins and angular´s theme
+  background-color: #262626;
+
+  .title-header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .table-row {
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255, 215, 64, 0.07);
+    }
+
+    th.mat-header-cell:first-of-type, td.mat-cell:first-of-type {
+      padding-left: 1rem;
+    }
+  }
+
+  .selected-hero {
+    background-color: rgba(255, 215, 64, 0.77);
+
+    &:hover {
+      background-color: rgba(255, 215, 64, 0.67);
+    }
+
+    td {
+      color: rgba(black, 0.87);
+    }
+
+  }
+
+  td {
+    // TODO: move this to a scss vars, mixim and angular theme
+    color: rgba(white, 0.87);
+  }
+}
+
+.super-heroes-card {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 12vh;
+  background-color: #262626;
+  position: relative;
+
+  @media (max-width: 450px) {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+  }
+
+  .mat-card-footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;;
+
+    button {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 450px) {
+      margin-top: 0;
+      justify-content: space-around;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      margin-left: 0rem;
+    }
+  }
+}
+
+.super-heroes-paginator {
+  width: 100%;
+  margin: 0 auto;
+  height: fit-content;
+  border-bottom: 1px solid rgba(#fff, 0.13);
+  border-top: 1px solid rgba(#fff, 0.13);
+
+  @media (max-width: 450px) {
+    position: fixed;
+    bottom: 70px;
+  }
+}
+

@@ -1,0 +1,80 @@
+:host {
+  display: block;
+}
+
+mat-toolbar {
+  border-bottom: 1px solid rgba(white, 0.13);
+}
+
+.mat-toolbar-row {
+  justify-content: space-between;
+}
+
+.title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+
+.super-heroes-card {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 12vh;
+  background-color: #262626;
+
+  @media (max-width: 450px) {
+    width: 100%;
+    margin: 0 0;
+    height: calc(100vh - 90px);
+    padding: 1rem 0;
+    position: relative;
+  }
+
+  .mat-card-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;;
+    color: rgba(255, 215, 64, 0.67);
+
+    @media (max-width: 450px) {
+      font-size: 16px;
+    }
+
+  }
+
+  .mat-card-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    .field {
+      width: 100%;
+    }
+  }
+
+  .mat-card-footer {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;;
+
+    @media (max-width: 450px) {
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+      justify-content: space-around;
+      padding-left: 1rem;
+    }
+
+    button {
+      margin-right: 1rem;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
