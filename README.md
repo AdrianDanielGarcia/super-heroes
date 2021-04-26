@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
 
+## Github Pages running app
+
+[click here to open the Github pages working app](https://adriandanielgarcia.github.io/super-heroes/)
+
+## Running the app using Docker
+
+* Clone the repo
+* Run `docker build -t super-heroes-multistage-image . ` to generate the image
+* Run `❯ docker run --name super-heroes-multistage-container -d -p 8888:80 super-heroes-multistage-image` to generate and run the container
+* Navigate to `http://localhost:8888`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
